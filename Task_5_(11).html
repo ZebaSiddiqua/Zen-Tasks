@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+
+
+    body{
+        margin-top: 20px;
+		margin-bottom: 80px;
+		margin-right: 350px;
+		margin-left: 350px;
+        padding: 50px;
+		hieght:300px;
+		width:500px;
+    }
+	
+</style>
+
+    <div class="container">
+        
+        <form style="  background-color:  #FFFFCC  ; font-weight:bold">
+		<div style=" color : black ; text-align: center; background-color:#FFCC00 "> <h1>Sign Up</h1> 
+		</div>
+		
+<br>
+            <label for="fname">First Name</label> 	<span style="margin-right:197px"></span>
+			<label for="lname">Last Name</label>
+			<br>
+            <input type="text" id="fname" name="first name" placeholder="Your name..." size = "20" required> 
+			<span style="margin-right:100px"></span>
+            <input type="text" id="lname" name="last name" placeholder="Your last name..." size = "20" required>
+			<br>
+			<br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" placeholder="Your Email here.."size = "61"><br><br>
+            <label for="phn">Phone No.</label><br>
+            <input type="number" id="phn" name="phone" placeholder="Enter your number" maxlength="10"><br>
+            </select><br>
+			
+			<label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+  <br><br>
+  
+		<label for="birthday">Date of Birth:</label>
+  <input type="date" id="birthday" name="birthday">
+  <br><br>
+  
+  <div> Programming Languages Known: </div>
+  <input type="checkbox" id="Python" name="Python" value="Python">
+  <label for="Python"> Python </label><br>
+  <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript" >
+  <label for="JavaScript"> JavaScript </label><br>
+  <input type="checkbox" id="Java" name="Java" value="Java">
+  <label for="Java">Java</label>
+  <br><br>
+  
+ <label for="skill">Rate your skills: </label>
+  <input type="range" id="skill" name="skill" min="0" max="100">
+  <br><br>
+  
+   <div>Payment method:</div>
+  <input type="radio" id="on" name="on" value="on" checked>
+  <label for="on">Online</label><br>
+  <input type="radio" id="off" name="off" value="off">
+  <label for="off">Check</label><br><br>
+ 
+            <label for="subject">Introduction about yourself </label><br>
+            <textarea type="text" id="subject" name="subj" placeholder="Write something here.." rows="10" cols="65">
+                </textarea><br><br>
+            <input type="submit" value="SEND" style="width:400px ; margin-left : 50px ; background-color: #FFCC00 ; color:black; font-weight:bold ; heigth: 40px">    
+ <input type="reset" Value="RESET"  style="width:400px ; margin-left : 50px ; background-color: #FFCC00 ; color:black; font-weight:bold ; heigth: 40px">    
+        </form>
+    </div>
+</body>
+</html>
