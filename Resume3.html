@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+	
+<link href="https://fonts.googleapis.com/css2?family=Chango&family=Oswald:wght@200&family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+<style>
+
+ * {
+  box-sizing: border-box;
+  
+}
+
+ body{
+        margin-left: 10px;
+		margin-right : 10px;
+		margin-top:10px;
+		margin-bottom:10px;
+        padding: 10px;
+		border: 2px solid black
+    }
+	
+input[type="range"]{
+  width:25%;
+  position : absolute;
+  left : 200px;
+  margin-top:10px;
+}
+	
+.pic img {
+width:250px;
+height:200px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+border: 6px dotted #FFD700;
+display:block;
+border-radius: 50%;
+clip: 10px
+
+}
+ 
+ form {
+ font-weight:bold;
+ font-size: 20px
+ }
+ 
+ .centered i {
+ border: 4px dotted #FFD700;
+ border-radius:50%;
+ float : left; 
+ }
+
+.centered span{
+ text-align:right;
+   font-family: 'Playfair Display', serif;
+   color:grey;
+   font-size:35px
+   
+ }
+ 
+ .centered p {
+ font-size:20px;
+  font-family: 'Oswald', sans-serif;
+  text-align:left;
+ }
+ .centered  div{
+ font-size:20px;
+  font-family: 'Oswald', sans-serif;
+  text-align:left;
+ }
+ .centered  ul{
+ font-size:20px;
+  font-family: 'Oswald', sans-serif;
+  text-align:left;
+ }
+
+ .name {
+ display:block;
+ width:45%;
+ height:7%;
+ background-color:#FFD700;
+ font-size : 3.5vw;
+ text-align:center;
+ border-radius:10px;
+ position:relative;
+margin-top:-60px;
+margin-left:auto;
+margin-right:auto;
+ font-family: 'Chango', cursive;
+ z-index:1;
+
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  border-right : 1px solid black
+}
+
+.flex-item-right {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="main">
+<div>
+<div style="background-color: #808080 ; padding: 10px; border: 0px; height:220px" class="pic">
+<img src="https://5.imimg.com/data5/SY/NR/GY/SELLER-701245/indian-mens-suit-500x500.jpg" alt="Avatar"></div>
+<div style="background-color: #f2f2f2; padding: 10px; border: 0px; height:40px"></div>
+<div class = "name" > &ensp; BRIAN DUDEY &ensp; </div>
+<div style="background-color: #808080 ; padding: 10px; border: 0px; height:40px ;position:relative;z-index:2"></div>
+</div>
+	<br>
+	<div style= "text-align:center" > N.Damen Avenue, Chicago 99999 | 999-999-9999 | hello@kickresume.com | www.kickresume.com</div>
+	<hr>
+	
+	
+<div class="flex-container ">
+  <div class="flex-item-left">
+    <div class="centered">
+    <i class="fas fa-user-circle fa-2x"></i>
+	<span>Profile </span>
+    <p>Innovation optimized solution seeker. Excited to be at the deployment phase
+	of my career as a web developer.I'm ambitious,adventourous,assiduous,animated and 
+	an alliteration advocate.</p>
+	<br>
+	<br>
+  </div>
+  
+  <div class="centered">
+   <i class="fab fa-gg-circle fa-2x"></i>
+	<span> Skills </span>
+	<div>
+	<span style ="margin-left:230px; font-size:28px;font-weight:bold;color:black ; "> Technical Skills</span>
+	
+	<form>
+	<label for="skill">JavaScript  </label>
+    <input type="range" id="skill" name="skill" min="0" max="100" value="80" ><br>
+	<label for="skill2">CSS  </label></label>
+    <input type="range" id="skill1" name="skill1" min="0" max="100" value="60" ><br>
+	<label for="skill3">HTML  </label></label>
+    <input type="range" id="skill3" name="skill3" min="0" max="100" value="50" ><br>
+	<label for="skill4">React  </label></label>
+    <input type="range" id="skill4" name="skill4" min="0" max="100" value="90" ><br>
+	<label for="skillt">Redux  </label></label>
+    <input type="range" id="skillt" name="skillt" min="0" max="100" value="30" ><br>
+	<br>
+	<span style ="margin-left:230px; font-size:28px;font-weight:bold;color:black ; "> Additional Skills </span>
+	<br>
+	<label for="skill5">Project Management  </label>
+    <input type="range" id="skill5" name="skill5" min="0" max="100" value="80" ><br>
+	<label for="skill6">Recruitment  </label></label>
+    <input type="range" id="skill6" name="skill6" min="0" max="100" value="70" ><br>
+	<label for="skill7">Business Development  </label></label>
+    <input type="range" id="skill7" name="skill7" min="0" max="100" value="50" ><br>
+	<label for="skill8">Editing  </label></label>
+    <input type="range" id="skill8" name="skill8" min="0" max="100" value="100" ><br>
+	</form>
+	</div>
+	<br>
+	<br>
+  </div>
+  
+  <div class="centered">
+    <i class="fas fa-check-circle fa-2x"></i>
+	<span>Work Experience </span><br>
+	<b>Event Manager</b> &emsp; (03/2014-02/2017)
+	<br> C3 present, Washington DC<br>
+	<ul style= "list-style-type:disc">
+    <li>Lead and execute a II phases of event planning and production spanning committe 
+	recruitment,training,vendor relationships and on-site facilitation.</li>
+	<li>Brought new business to the organiztation through relentless networking and stewardship
+	which helped the company win the bid for the State Department Summit on the Middle East and, the 
+	companies largest civic event to date, the United State of Women</li>
+	</ul>
+	<br>
+	<br>
+  </div>
+  </div>
+  
+  <div class="flex-item-right">
+    <div class="centered">
+   <i class="fas fa-check-circle fa-2x"></i>
+	<span>Work Experience </span><br>
+	<b>Community relations Manager</b> &emsp; (06/2011-02/2014)
+	<br> Gay and Lesbian Elder Housing, LOs Angeles<br>
+	<ul style= "list-style-type:disc">
+    <li>Arranging presenattion and the pitch deck.</li>
+	<li>Designing a PR plan and eshtablishing important focus points.</li>
+	<li> Building relationships with key media players.</li>
+	</ul>
+</div>
+
+<div class="centered">
+   <i class="fas fa-arrow-circle-right fa-2x"></i>
+	<span>Education </span><br>
+	<b>Engineering Immersion Program</b> &emsp; (11/2018-06/2018)
+	<br> Thinkful,Chicago,IL<br>
+	
+	<div>Project-focused intensive program with emphasis on MOngo,Express,React and JavaScript 
+	technical stack.</div><br>
+	
+	<ul style= "list-style-type:disc">
+    <li>Developed a full-stack web application,"RenewU", using React that allows users to 
+	explore various aspects of meditation.	</li>
+	<li>Developed a language learning app,"Foodie Phonetics" using spaced repetition and a 
+	linked list data structure</li>
+	<li> Developed a concierge app, "Pley", for individuals looking for curated suggestions
+	when visiting a new place.</li>
+	</ul>
+</div>
+
+<div class="centered">
+	<b>BA, English</b> &emsp; (11/2001-06/2005)
+	<br> University of California<br>
+</div>
+</div>
+  </div>
+</div>
