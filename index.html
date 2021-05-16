@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUVI TASK</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<style>
+.headings{
+text-align:center;
+font-weight:bold;
+}
+
+#image{
+width: 100%;
+margin-left:auto;
+margin-right:auto;
+z-index:0;
+} 
+
+#exit{
+position:absolute;
+ top:50%;
+ left:40%;
+ z-index:1;
+ visibility : hidden;
+}
+
+#fs{
+position:relative}
+
+
+</style>
+</head>
+
+<body>
+<h1 class="headings" >DOM EVENTS </h1> 
+<div class="container">
+<h5 class="headings">1.Color a span/div element content when a user moves the mouse over the element</h5>
+<div id = "first">
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
+pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
+rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+ Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+ Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+</div>
+<hr>
+
+<h5 class="headings">2.Use prompt to read a value from user and display it in the span element</h5>
+<div id = "prom">
+<button type="button"> Click me to enter name </button><br><br>
+<span id="output" class="headings"></span>
+</div>
+<hr>
+
+
+<h5 class="headings">3.Display the mouse X and Y coordinates in a span tag when you click on a h1 tag which contains a paragraph</h5>
+<div>
+<h1 id = "cordinates" class="headings" style="color:red" > Click me to know the mouse X and Y coordinates </h1>
+<span id="cords"></span>
+</div>
+<hr>
+
+<h5 class="headings">4.Write a Javascript code for character counts in the textarea.</h5>
+<div>
+<textarea style="width:100%; height: 200px;" maxlength="200" placeholder="Enter your Feedback" id="entered"></textarea>
+<div id="used"> </div>
+</div>
+<hr>
+
+
+<h5 class="headings">5.Convert a given number from decimal to binary or hexadecimal</h5>
+<div>
+Insert the number: <input type="number" id = "num" min="0" required></input>
+<button type="button" id="binary" >Click me to conver to Binary </button>
+<button type="button" id="hexa">Click me to conver to hexadecimal </button><br><br>
+<div id="converted"></div>
+</div>
+<hr>
+
+<h5 class="headings">6.With Javascript write a simple from validation</h5>
+<div class="row">
+<div class="col-4 offset-4">
+<form method="post" name="Form" id="myForm">
+<div class="form-group">
+ <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" >
+  </div>
+ <div class="form-group">
+ <label for="phn">Phone number</label>
+    <input type="text" class="form-control" id="phn"  name="phn">
+  </div>
+<div class="form-group">
+ <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email"  name="email">
+  </div>
+  <div class="form-group">
+    <label for="pass">Password</label>
+    <input type="password" class="form-control" id="pass"  name="pass" placeholder="Min Required length is 8" >
+  </div><br>
+  <button type="submit" class="btn btn-primary" id="verify">Submit</button>
+</form>
+</div>
+</div>
+<hr>
+
+<h5 class="headings">7.In your HTML Add two buttons, where first button action for full screen mode and the second button for exit from full screen mode.</h5>
+<div id="complete">
+<div  id="fs" ><img id = "image"  src="https://m.media-amazon.com/images/M/MV5BMTQ3ZGIzNjMtYWJhMC00MDRhLTgyYWItMjBjNzM0MTIzM2JlXkEyXkFqcGdeQWRvb2xpbmhk._V1_CR1,0,1109,624_AL_UX477_CR0,0,477,268_AL_.jpg" >
+ <button type="button" class="btn btn-primary" id="exit">Click to view in Exit Fullscreen Mode</button></div><br>
+ <button type="button" class="btn btn-primary" id="full">Click to view in Fullscreen Mode</button>
+ <hr>
+</div>
+
+<h5 class="headings">8.When user press any key in your html page show a alert that Invalid Key Pressed, but when user press
+                spacebar show an alert Thank You..!! and close the current window..</h5>
+<div>
+ <button type="button" class="btn btn-primary" id="google">Click to go to Google home page</button>
+ <input type="text" id="space" name="name" style="border:none; width:50%; margin-left:200px" placeholder="Click me and press space bar to close the window">
+</div>
+<hr>
+
+<h5 class="headings"> 9. When a cursor is moved over an content, allow the user to edit the content in HTML page.
+NOTE: Input element should not be used.</h5>
+<div id="edit">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officiis corporis quibusdam labore suscipit
+                quia dolore error, est, impedit vel nulla maiores, quaerat nostrum velit totam! Velit neque atque eius?</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+ 
